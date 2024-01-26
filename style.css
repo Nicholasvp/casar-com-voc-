@@ -1,0 +1,227 @@
+:root{
+    --font-primary: 'Kameron', serif;
+    --font-secondary: 'Lovers Quarrel', cursive;
+    --color-primary: #291711;
+    --color-secondary: #474B24;
+    --color-tertiary: #8DDCA4;
+    --color-quaternary: #63326E;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+}
+
+.home{
+    font-family: var(--font-primary);
+    display: flex;
+    background: url("./assets/images/casal.png");
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    
+    font-size: 3rem;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.80);
+    color: #ffff;
+}
+
+.subtitle{
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.80);
+    color: #ffff;
+}
+
+#cards{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0;   
+}
+
+#card{
+    display: flex;
+    width: 11rem;
+    height: min-content;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+#card-title{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 0;
+    margin:1rem 0;
+    
+}
+
+#card-text{
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.icon{
+    width: 5rem;
+}
+
+.message{
+    background-color: var(--color-secondary);
+    height: 100%;
+    padding: 4rem;
+    text-align: center;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.circle{
+    
+    background-image: url("./assets/images/casamento.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 99rem;
+}
+
+.title-message{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffff;
+    
+}
+
+.message-text{
+    font-family: var(--font-primary);
+    text-align: justify;
+    font-size: 0.8rem;
+    color: #ffff;
+}
+span{
+    background-color: var(--color-quaternary);
+}
+
+
+
+
+.contato{
+    height: 100vh;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contato-title{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.action{
+    
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.whatsapp{
+    background-color: var(--color-tertiary);
+}
+
+.instagram{
+    background-color: var(--color-quaternary);
+}
+
+
+@media screen and (min-width: 768px){
+    .home{
+        height: 100vh;
+    }
+
+    .title{
+        font-size: 6rem;
+    }
+
+    .subtitle{
+        font-size: 6rem;
+    }
+
+    #cards{
+        padding: 10rem 1rem;   
+        gap: 4rem;
+    }
+
+    #card{
+        width: 15rem;
+        padding: 0;
+    }
+
+    #card-title{
+        font-size: 1.5rem;
+    }
+
+    #card-text{
+        font-size: 1.2rem;
+        
+    }
+
+    .message{
+        padding: 4rem 4rem;
+        height: 150vh;
+    }
+
+    .contato{
+        padding: 0;
+    }
+
+    .contato-title{
+        font-size: 4rem;
+    }
+
+    .action{
+        font-size: 2rem;
+    }
+
+    .circle{
+        width: 20rem;
+        height: 20rem; 
+    }
+
+    .title-message{
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .message-text{
+        font-size: 1.5rem;
+        width: 60%;
+    }
+
+}
