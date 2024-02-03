@@ -16,18 +16,23 @@ body {
 .home{
     font-family: var(--font-primary);
     display: flex;
-    background: url("./assets/images/casal.png");
+    background: url("./assets/images/gabriel_julia.jpg");
     background-position: center;
-    background-size: cover;
-    height: 50vh;
+    background-position-y: 10%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%; 
 }
 
 .title{
-    
     font-size: 3rem;
     text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.80);
     color: #ffff;
@@ -116,7 +121,6 @@ body {
 span{
     background-color: var(--color-quaternary);
 }
-
 
 
 
